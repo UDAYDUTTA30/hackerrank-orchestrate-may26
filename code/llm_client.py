@@ -113,7 +113,7 @@ def generate_text(prompt: str, retries: int = 2) -> Optional[str]:
                 chat_completion = client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
                     model=GROQ_MODEL,
-                    temperature=0.15,
+                    temperature=0.0,
                     max_tokens=1024,
                 )
                 return chat_completion.choices[0].message.content.strip()
@@ -133,7 +133,7 @@ def generate_text(prompt: str, retries: int = 2) -> Optional[str]:
                 response = model.generate_content(
                     prompt,
                     generation_config=genai.GenerationConfig(
-                        temperature=0.15,
+                        temperature=0.0,
                         max_output_tokens=1024,
                     ),
                 )
