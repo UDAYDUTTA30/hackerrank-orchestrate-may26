@@ -5,7 +5,11 @@ Prioritizes Groq if GROQ_API_KEY is available.
 import json
 import os
 import time
-from typing import Type, TypeVar, Optional, Any
+import warnings
+from typing import Type, TypeVar, Optional
+
+# Suppress the legacy Gemini SDK deprecation warning
+warnings.filterwarnings("ignore", category=FutureWarning, module="google.generativeai")
 
 from dotenv import load_dotenv
 from pydantic import BaseModel
@@ -13,8 +17,14 @@ from pydantic import BaseModel
 # Load environment variables
 load_dotenv()
 
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
+
 GROQ_KEY = os.environ.get("GROQ_API_KEY", "")
 API_KEY = os.environ.get("GEMINI_API_KEY", "") or os.environ.get("GOOGLE_API_KEY", "")
+
 
 # Configuration
 GROQ_MODEL = "llama-3.3-70b-versatile"  # Latest available 70B model
@@ -32,8 +42,7 @@ def _get_groq_client():
 
 def _ensure_gemini():
     global _gemini_initialized
-    if not _gemini_initialized and API_KEY:
-        import google.generativeai as genai
+    if not _gemini_initialized and genai and API_KEY:
         genai.configure(api_key=API_KEY)
         _gemini_initialized = True
     return _gemini_initialized
