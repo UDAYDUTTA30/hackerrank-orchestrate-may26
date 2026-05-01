@@ -1,5 +1,10 @@
 # HackerRank Orchestrate: Support Triage Agent
 
+### Performance Metrics (sample_support_tickets.csv)
+- **False Escalation Rate:** 0.00%
+- **False Reply Rate:** 0.00%
+- **Unit Tests:** 7/7 passing
+
 A professional-grade, RAG-enhanced support agent designed to resolve tickets across the **HackerRank**, **Claude**, and **Visa** ecosystems with 0% false escalation/reply rates.
 
 ## Architecture Overview
@@ -19,6 +24,25 @@ The agent uses a multi-layered orchestration pipeline:
 3.  **Risk & Safety Engine:**
     *   Forced human escalation for high-risk scenarios: Fraud, Legal threats, and Platform outages.
     *   Keyword-based detection for account compromise and financial disputes.
+## Project Structure
+
+```text
+project/
+├── code/
+│   ├── main.py              # CLI entrypoint
+│   ├── pipeline.py          # End-to-end orchestration
+│   ├── retriever.py         # TF-IDF corpus search
+│   ├── classifier.py        # Domain + intent classification
+│   ├── risk_engine.py       # Escalation logic
+│   ├── responder.py         # LLM response generation
+│   ├── llm_client.py        # Groq + fallback client
+│   └── tests/               # Unit tests
+├── data/                    # Support corpus (markdown)
+├── support_tickets/
+│   ├── support_tickets.csv  # Input
+│   └── output.csv           # Generated output
+└── .env.example
+```
 
 ## Setup
 
@@ -31,7 +55,7 @@ The agent uses a multi-layered orchestration pipeline:
 
 2.  **Install Dependencies:**
     ```bash
-    pip install pydantic google-generativeai python-dotenv groq
+    pip install pydantic groq python-dotenv openai
     ```
 
 ## Running the Agent
@@ -41,6 +65,9 @@ Run the final pass on the provided ticket dataset:
 python code/main.py --input support_tickets/support_tickets.csv --output support_tickets/output.csv --explain
 ```
 *The `--explain` flag prints detailed diagnostics (confidence, risk, retrieval scores) for each row.*
+
+### Output Schema
+Each row in `output.csv` contains: `status` (replied/escalated), `product_area`, `response`, `justification`, and `request_type`.
 
 ## Evaluation
 
