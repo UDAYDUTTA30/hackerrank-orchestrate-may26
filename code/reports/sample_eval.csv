@@ -1,0 +1,11 @@
+ticket_id,expected_request_type,pred_request_type,expected_status,pred_status,justification
+1,product_issue,product_issue,replied,replied,domain=hackerrank; classifier=0.72; retrieval=0.56; risk=0.10; decision=reply_with_disclaimer; grounding=0.47; flags=none
+2,bug,bug,escalated,escalated,domain=none; classifier=0.60; retrieval=0.66; risk=0.65; decision=risk_override; grounding=0.58; flags=platform_outage
+3,product_issue,product_issue,replied,replied,domain=hackerrank; classifier=0.72; retrieval=0.42; risk=0.10; decision=reply_with_disclaimer; grounding=0.39; flags=none
+4,product_issue,product_issue,replied,replied,domain=hackerrank; classifier=0.88; retrieval=0.41; risk=0.10; decision=reply_with_disclaimer; grounding=0.44; flags=none
+5,product_issue,product_issue,replied,replied,domain=hackerrank; classifier=0.88; retrieval=0.71; risk=0.10; decision=full_resolution; grounding=0.50; flags=none
+6,product_issue,product_issue,replied,replied,domain=claude; classifier=0.68; retrieval=0.54; risk=0.10; decision=reply_with_disclaimer; grounding=0.50; flags=none
+7,invalid,invalid,replied,replied,domain=none; classifier=0.30; retrieval=0.62; risk=0.35; decision=reply_with_disclaimer; grounding=0.55; flags=invalid_request
+8,product_issue,product_issue,replied,replied,domain=visa; classifier=0.80; retrieval=0.67; risk=0.10; decision=full_resolution; grounding=0.46; flags=none
+9,product_issue,product_issue,replied,replied,domain=visa; classifier=0.72; retrieval=0.72; risk=0.10; decision=full_resolution; grounding=0.47; flags=none
+10,invalid,product_issue,replied,replied,domain=none; classifier=0.60; retrieval=0.68; risk=0.10; decision=reply_with_disclaimer; grounding=0.49; flags=none

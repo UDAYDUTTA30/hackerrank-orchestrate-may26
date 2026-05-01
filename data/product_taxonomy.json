@@ -1,0 +1,118 @@
+{
+  "hackerrank": {
+    "areas": {
+      "screen": {
+        "keywords": ["assessment", "test", "candidate", "invite", "submission", "retake", "test setting", "question", "section", "score", "proctoring", "antiproctoring", "plagiarism", "variant", "cutoff", "scoring", "reinvite", "extra time", "time accommodation", "watermark", "email settings", "test report", "add time"],
+        "description": "Tests, assessments, candidate management, and test configuration"
+      },
+      "interviews": {
+        "keywords": ["interview", "mock interview", "codepair", "lobby", "zoom", "scheduling", "interviewer"],
+        "description": "Interview creation, management, and CodePair"
+      },
+      "hackerrank_community": {
+        "keywords": ["challenge", "practice", "resume builder", "apply tab", "leaderboard", "solve", "badge", "hackerrank community", "google login", "delete my account", "account settings", "practice coding", "prep kit"],
+        "description": "HackerRank community platform, practice, and user accounts"
+      },
+      "library": {
+        "keywords": ["question library", "custom question", "question type", "coding question", "mcq", "project question"],
+        "description": "Question library and question management"
+      },
+      "settings": {
+        "keywords": ["team", "user role", "admin", "company settings", "sso", "audit log", "api key", "entitlement"],
+        "description": "Account settings, teams, roles, and administration"
+      },
+      "integrations": {
+        "keywords": ["ats", "greenhouse", "lever", "workday", "integration", "webhook"],
+        "description": "ATS and third-party integrations"
+      },
+      "skillup": {
+        "keywords": ["skillup", "certify", "learn", "developer skill"],
+        "description": "SkillUp platform for developer upskilling"
+      },
+      "general-help": {
+        "keywords": ["hackerrank ai", "release note", "deprecation", "campus hiring"],
+        "description": "General help, AI features, and platform updates"
+      },
+      "certifications": {
+        "keywords": ["certification", "certificate", "verify skill", "role certification"],
+        "description": "HackerRank certifications and verification"
+      }
+    }
+  },
+  "claude": {
+    "areas": {
+      "claude": {
+        "keywords": ["conversation", "chat", "temporary chat", "feature", "artifact", "project", "memory", "style", "personalization", "usage limit", "account management", "get started"],
+        "description": "Core Claude product: conversations, features, and account"
+      },
+      "claude-api-and-console": {
+        "keywords": ["api", "console", "endpoint", "rate limit", "token", "streaming", "prompt", "api key", "billing", "pricing", "workbench"],
+        "description": "Claude API, Console, billing, and developer tools"
+      },
+      "team-and-enterprise-plans": {
+        "keywords": ["workspace", "team plan", "enterprise", "seat", "admin", "organization", "sso", "scim", "analytics"],
+        "description": "Team and Enterprise plan management"
+      },
+      "pro-and-max-plans": {
+        "keywords": ["pro plan", "max plan", "upgrade", "subscription", "plan"],
+        "description": "Pro and Max plan features and billing"
+      },
+      "privacy-and-legal": {
+        "keywords": ["privacy", "data use", "delete conversation", "retention", "private", "crawl", "personal data", "gdpr", "legal"],
+        "description": "Privacy, data handling, and legal topics"
+      },
+      "safeguards": {
+        "keywords": ["safety", "filter", "blocked", "policy", "safeguard", "jailbreak", "harmful", "refusal"],
+        "description": "Content safety, filters, and usage policies"
+      },
+      "amazon-bedrock": {
+        "keywords": ["bedrock", "aws", "amazon"],
+        "description": "Claude on Amazon Bedrock"
+      },
+      "claude-code": {
+        "keywords": ["claude code", "coding assistant", "terminal"],
+        "description": "Claude Code product"
+      },
+      "claude-desktop": {
+        "keywords": ["desktop app", "desktop extension", "mcp"],
+        "description": "Claude Desktop application"
+      },
+      "claude-mobile-apps": {
+        "keywords": ["mobile", "ios", "android", "phone app"],
+        "description": "Claude mobile applications"
+      },
+      "connectors": {
+        "keywords": ["connector", "google drive", "notion", "confluence", "integration"],
+        "description": "Claude connectors for external services"
+      }
+    }
+  },
+  "visa": {
+    "areas": {
+      "consumer": {
+        "keywords": ["lost card", "stolen card", "block card", "customer assistance", "report card", "emergency cash", "replacement card", "card stolen", "lost or stolen"],
+        "description": "Consumer card services, lost/stolen cards"
+      },
+      "travel_support": {
+        "keywords": ["travel", "traveller's cheque", "travelers cheque", "exchange rate", "travel insurance", "cheques", "lisbon", "abroad"],
+        "description": "Travel-related support including traveller's cheques"
+      },
+      "fraud_protection": {
+        "keywords": ["fraud", "unauthorized transaction", "identity theft", "suspicious", "didn't make this purchase", "fraud protection"],
+        "description": "Fraud detection and protection"
+      },
+      "dispute_resolution": {
+        "keywords": ["chargeback", "dispute", "wrong product", "merchant ignored", "dispute resolution"],
+        "description": "Payment disputes and chargebacks"
+      },
+      "small-business": {
+        "keywords": ["merchant", "taking payments", "minimum spend", "checkout fee", "small business", "data security", "regulations"],
+        "description": "Small business and merchant services"
+      },
+      "general_support": {
+        "keywords": ["visa", "general", "contact", "support"],
+        "description": "General Visa support"
+      }
+    }
+  }
+}
